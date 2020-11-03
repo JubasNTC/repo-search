@@ -55,7 +55,9 @@ const RepoCardMain: FC<RepoCardMainProps> = ({
           ownerUrl={ownerUrl}
           repoUrl={repoUrl}
         />
-        <StarButton />
+        <a href={repoUrl} target="_blank" rel="noreferrer">
+          <StarButton />
+        </a>
       </CardContainer>
       <RepoCardDiscription description={description} />
       <RepoCardStats
